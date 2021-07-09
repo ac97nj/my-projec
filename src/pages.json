@@ -1,16 +1,80 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/horizontal/index",
+			"style": {
+				"navigationBarTitleText": "横屏"
+			}
+		},
+		{
+			"path": "pages/video/index",
+			"style": {
+				"navigationBarTitleText":"视频"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText":"搜索"
 			}
 		}
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#00000",
+		"selectedColor":"#f7545f",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list":[
+			{
+				"pagePath":"pages/home/index",
+				"iconPath":"static/icon/_home.png",
+				"selectedIconPath":"static/icon/home.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/horizontal/index",
+				"iconPath":"static/icon/_img.png",
+				"selectedIconPath":"static/icon/img.png",
+				"text":"横屏"
+			},
+			{
+				"pagePath":"pages/video/index",
+				"iconPath":"static/icon/_videocamera.png",
+				"selectedIconPath":"static/icon/videocamera.png",
+				"text":"视频"
+			},
+			{
+				"pagePath":"pages/search/index",
+				"iconPath":"static/icon/_search.png",
+				"selectedIconPath":"static/icon/search.png",
+				"text":"搜索"
+			},
+			{
+				"pagePath":"pages/mine/index",
+				"iconPath":"static/icon/_my.png",
+				"selectedIconPath":"static/icon/my.png",
+				"text":"我的"
+			}
+		]
 	}
+
 }
